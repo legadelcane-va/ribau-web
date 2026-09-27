@@ -1,54 +1,65 @@
 name: Sync Google Sheets to CSV
 
 on:
-  # schedule:
-    # Runs every 30 minutes
-    # - cron: '*/30 * * * *'
+  schedule:
+    # Every night at 03:17 UTC (05:17 in Italy in summer, 04:17 in winter).
+    # It publishes only if something changed, so quiet nights cost no Netlify credits.
+    - cron: '17 3 * * *'
   push:
     branches:
-      - main  
+      - main
     paths:
       - 'public/images/products/**'
   workflow_dispatch: # Allows manual trigger from Actions tab
+    inputs:
+      test_sheet_id:
+        description: 'Test only: ID of a copy of the spreadsheet to sync instead (nothing gets published)'
+        required: false
 
 permissions:
   contents: write  # Allow the action to commit and push changes
 
+# Never run two syncs at once: they could import the same form answer twice
+concurrency:
+  group: sheets-sync
+  cancel-in-progress: false
+
 jobs:
   sync:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           persist-credentials: true
 
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v7
         with:
-          node-version: '20'
+          node-version: '22'
 
       - name: Install dependencies
-        run: |
-          npm install googleapis
+        run: npm ci
 
-      - name: Fetch Google Sheets data and convert to CSV
+      - name: Import form answers, download photos, convert to CSV and check
         env:
-          GOOGLE_SHEETS_ID: ${{ secrets.GOOGLE_SHEETS_ID }}
+          GOOGLE_SHEETS_ID: ${{ inputs.test_sheet_id || secrets.GOOGLE_SHEETS_ID }}
           GOOGLE_SERVICE_ACCOUNT: ${{ secrets.GOOGLE_SERVICE_ACCOUNT }}
         run: node scripts/sheets_sync.js
 
-      - name: Commit updated CSV to main
+      - name: Commit updated CSV and photos to main
+        if: ${{ !inputs.test_sheet_id }}
         run: |
           git config user.name "GitHub Action"
           git config user.email "actions@github.com"
-          git add public/data/products.csv package.json package-lock.json
+          git add public/data/products.csv public/images/products
           git commit -m "Auto-update CSV da Google Sheets" || echo "No changes to commit"
           git push origin main
 
       - name: Force sync prod branch from main
+        if: ${{ !inputs.test_sheet_id }}
         run: |
           git fetch origin prod
           git checkout -B prod

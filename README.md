@@ -4,9 +4,13 @@
 
 Website to display products from RiBau, the thrift shop of Varese's Dog Shelter.
 
+## Adding products
+
+Volunteers add products with the Google Form "Nuovo prodotto RiBau". Every night a GitHub workflow copies the new answers into the Google Sheet with the next free ID, downloads their photos, publishes the website if anything changed, and reports problems by email. Setup and details: [docs/form_setup.md](docs/form_setup.md).
+
 ## Product photos
 
-Put photos in `public/images/products`, named with the product ID from the Google Sheet: `0123.jpg` for a single photo, or `0123_1.jpg`, `0123_2.jpg`, ... for several (`.jpg`, `.jpeg` and `.png` work, with no limit on the number).
+Photos added through the form are handled automatically. To add photos by hand, put them in `public/images/products`, named with the product ID from the Google Sheet: `0123.jpg` for a single photo, or `0123_1.jpg`, `0123_2.jpg`, ... for several (`.jpg`, `.jpeg` and `.png` work, with no limit on the number).
 
 `npm run dev` and `npm run build` automatically run `scripts/prepare-images.js` (or run it with `npm run images`). It makes the small WebP thumbnails shown in the product cards (`public/images/thumbs`) and the list of photos of each product (`public/data/images.json`). Both are generated, so they are not committed. Visitors only download a full-size photo when they zoom in.
 

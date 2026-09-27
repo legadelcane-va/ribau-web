@@ -49,6 +49,7 @@
 </template>
 
 <script>
+import Papa from 'papaparse';
 import ProductCard from './ProductCard.vue';
 import ContactForm from './ContactForm.vue';
 import ImageForeground from './ImageForeground.vue';
@@ -94,37 +95,13 @@ export default {
       this.imageToShowInModal = null;
     },
     parseCSV(text) {
-      const lines = text.split('\n').filter(line => line.trim());
-      if (lines.length === 0) return [];
-      
-      const headers = lines[0].split(',').map(h => h.trim().replace(/^"|"$/g, ''));
-      
-      return lines.slice(1).map(line => {
-        // Handle CSV with quoted values
-        const values = [];
-        let current = '';
-        let inQuotes = false;
-        
-        for (let i = 0; i < line.length; i++) {
-          const char = line[i];
-          
-          if (char === '"') {
-            inQuotes = !inQuotes;
-          } else if (char === ',' && !inQuotes) {
-            values.push(current.trim().replace(/^"|"$/g, ''));
-            current = '';
-          } else {
-            current += char;
-          }
-        }
-        values.push(current.trim().replace(/^"|"$/g, ''));
-        
-        const row = {};
-        headers.forEach((header, i) => {
-          row[header] = values[i] || '';
-        });
-        return row;
-      });
+      // Papa Parse handles quoted values, including commas, quotes and line breaks inside them
+      return Papa.parse(text, {
+        header: true,
+        skipEmptyLines: true,
+        transformHeader: header => header.trim(),
+        transform: value => value.trim()
+      }).data;
     },
     
     async loadProducts() {
