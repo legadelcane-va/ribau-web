@@ -129,13 +129,17 @@ export default {
     
     async loadProducts() {
       try {
-        const response = await fetch('/data/products.csv');
+        const [response, imagesResponse] = await Promise.all([
+          fetch('/data/products.csv'),
+          fetch('/data/images.json') // photos of each product, listed at build time by scripts/prepare-images.js
+        ]);
         if (!response.ok) {
           throw new Error('Failed to fetch products');
         }
         
         const csvText = await response.text();
         const rows = this.parseCSV(csvText);
+        const imagesById = imagesResponse.ok ? await imagesResponse.json() : {};
         
         this.products = rows
           .filter(row => row.id) // Only include rows with IDs
@@ -146,7 +150,8 @@ export default {
             category: row.categoria || 'Altro',
             price: parseFloat(row.prezzo) || 0,
             inStock: row.disponibile === 'true' || row.disponibile === 'TRUE' || row.disponibile === '1',
-            featured: row.primoPiano === 'true' || row.primoPiano === 'TRUE' || row.primoPiano === '1'
+            featured: row.primoPiano === 'true' || row.primoPiano === 'TRUE' || row.primoPiano === '1',
+            images: imagesById[row.id] || []
           }));
         
         this.loading = false;

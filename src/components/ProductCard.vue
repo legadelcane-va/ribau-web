@@ -4,11 +4,13 @@
       <!-- Image Carousel -->
       <div class="carousel">
         <img 
-          :src="currentImage" 
+          v-if="currentImage"
+          :src="currentImage.thumb"
           :alt="`${product.name} - Image ${currentImageIndex + 1}`"
+          loading="lazy"
           @error="handleImageError"
           class="product-image"
-          @click.stop="$emit('image-click', currentImage)"
+          @click.stop="$emit('image-click', currentImage.src)"
         >
         
         <!-- Navigation Arrows (only show if multiple images) -->
@@ -76,71 +78,33 @@ export default {
   data() {
     return {
       currentImageIndex: 0,
-      availableImages: [],
-      fallbackImage: '/images/lobo_fallback.jpeg'
+      brokenImages: []
     };
   },
   computed: {
+    // Photos listed in /data/images.json: { src: full size photo, thumb: small version for the card }
+    availableImages() {
+      return this.product.images.filter(img => !this.brokenImages.includes(img.src));
+    },
     currentImage() {
-      return this.availableImages[this.currentImageIndex] || this.fallbackImage;
+      return this.availableImages[this.currentImageIndex];
     },
     hasMultipleImages() {
       return this.availableImages.length > 1;
     }
   },
-  mounted() {
-    this.loadAvailableImages();
-  },
   methods: {
-    async loadAvailableImages() {
-      const images = [];
-      
-      // Helper function to check if image exists
-      const checkImage = (src) => {
-        return new Promise((resolve) => {
-          const img = new Image();
-          img.onload = () => resolve(true);
-          img.onerror = () => resolve(false);
-          img.src = src;
-        });
-      };
-
-      // Check single image format (id.jpg)
-      const singleImg = `/images/products/${this.product.id}.jpg`;
-      if (await checkImage(singleImg)) {
-        images.push(singleImg);
-      }
-      
-      // Check numbered format (id_1.jpg, id_2.jpg, id_3.jpg)
-      for (let i = 1; i <= 3; i++) {
-        const numberedImg = `/images/products/${this.product.id}_${i}.jpg`;
-        if (await checkImage(numberedImg)) {
-          images.push(numberedImg);
-        }
-      }
-
-      // Set available images or fallback
-      this.availableImages = images.length > 0 ? images : [this.fallbackImage];
-    },
     handleImageError(event) {
-      // Remove failed image from available images
-      const failedSrc = event.target.src;
-      const imgIndex = this.availableImages.findIndex(img => 
-        failedSrc.includes(img)
-      );
-      
-      if (imgIndex !== -1) {
-        this.availableImages.splice(imgIndex, 1);
-        
+      // Remove failed image from available images (the logo shows if none are left)
+      const failed = this.availableImages.find(img => event.target.src.endsWith(img.thumb));
+
+      if (failed) {
+        this.brokenImages.push(failed.src);
+
         // If we removed the current image, adjust index
         if (this.currentImageIndex >= this.availableImages.length) {
           this.currentImageIndex = Math.max(0, this.availableImages.length - 1);
         }
-      }
-
-      // If no images left, show fallback
-      if (this.availableImages.length === 0) {
-        event.target.src = this.fallbackImage;
       }
     },
     nextImage() {
@@ -185,6 +149,8 @@ export default {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  /* Logo shown while the photo loads, or if the product has no photo */
+  background: url('/images/logos/LNDC-Varese_210x240.webp') center / auto 70% no-repeat;
 }
 
 .product-image {

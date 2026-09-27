@@ -1,0 +1,6 @@
+# Netlify response headers: https://docs.netlify.com/manage/routing/headers/
+
+# Thumbnails get a new file name whenever their photo changes (see scripts/prepare-images.js),
+# so browsers can keep them for a year instead of re-checking them on every visit.
+/images/thumbs/*
+  Cache-Control: public, max-age=31536000, immutable
