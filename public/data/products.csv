@@ -1,9 +1,9 @@
 id,nome,descrizione,categoria,prezzo,disponibile,primoPiano,Column 1
-0032,Maglione ,Taglia piccola,Cappotti e Maglioni,10.00,TRUE,FALSE
-0033,Maglione ,Taglia piccola,Cappotti e Maglioni,10.00,TRUE,FALSE
-0034,Maglione ,Taglia piccola,Cappotti e Maglioni,10.00,TRUE,FALSE
-0035,Maglione ,Taglia piccola,Cappotti e Maglioni,10.00,TRUE,FALSE
-0036,Maglione ,Taglia piccola,Cappotti e Maglioni,10.00,TRUE,FALSE
+0032,Maglione,Taglia piccola,Cappotti e Maglioni,10.00,TRUE,FALSE
+0033,Maglione,Taglia piccola,Cappotti e Maglioni,10.00,TRUE,FALSE
+0034,Maglione,Taglia piccola,Cappotti e Maglioni,10.00,TRUE,FALSE
+0035,Maglione,Taglia piccola,Cappotti e Maglioni,10.00,TRUE,FALSE
+0036,Maglione,Taglia piccola,Cappotti e Maglioni,10.00,TRUE,FALSE
 0037,Cappotto,"Taglia piccola, cappotto impermeabile",Cappotti e Maglioni,10.00,TRUE,FALSE
 0039,Cappotto,"Taglia piccola, cappotto in pile",Cappotti e Maglioni,10.00,TRUE,FALSE
 0040,Cappotto,"Taglia piccola, in Jeans",Cappotti e Maglioni,10.00,TRUE,FALSE
@@ -37,31 +37,31 @@ id,nome,descrizione,categoria,prezzo,disponibile,primoPiano,Column 1
 0074,Cappotto,"Impermeabile, taglia medio-grande",Cappotti e Maglioni,15.00,TRUE,FALSE
 0076,Cappotto,"Impermeabile, imbottitura interna, taglia media",Cappotti e Maglioni,15.00,TRUE,FALSE
 0078,Cappotto,"Piumino, taglia medio-piccola",Cappotti e Maglioni,10.00,TRUE,FALSE
-0085,Felpa ,"Taglia piccola, 8 pezzi disponibili",Cappotti e Maglioni,10.00,TRUE,FALSE
+0085,Felpa,"Taglia piccola, 8 pezzi disponibili",Cappotti e Maglioni,10.00,TRUE,FALSE
 0086,Felpa,"Taglia piccola, 4 pezzi disponibili",Cappotti e Maglioni,10.00,TRUE,FALSE
 0087,Felpa,"Taglia piccola, 5 pezzi disponibili",Cappotti e Maglioni,10.00,TRUE,FALSE
-0180,Maglione ,32 cm,Cappotti e Maglioni,10.00,TRUE,FALSE
-0181,Maglione ,32 cm,Cappotti e Maglioni,10.00,TRUE,FALSE
-0185,Giacca ,19 cm,Cappotti e Maglioni,10.00,TRUE,FALSE
-0186 ,Maglione ,18 cm ,Cappotti e Maglioni,10.00,TRUE,FALSE
-0187,Giacca ,18 cm ,Cappotti e Maglioni,10.00,TRUE,FALSE
-0192,Maglione ,"lunghezza 51 cm, molto elastico, più articoli disponibili",Cappotti e Maglioni,10.00,TRUE,FALSE
+0180,Maglione,32 cm,Cappotti e Maglioni,10.00,TRUE,FALSE
+0181,Maglione,32 cm,Cappotti e Maglioni,10.00,TRUE,FALSE
+0185,Giacca,19 cm,Cappotti e Maglioni,10.00,TRUE,FALSE
+0186,Maglione,18 cm,Cappotti e Maglioni,10.00,TRUE,FALSE
+0187,Giacca,18 cm,Cappotti e Maglioni,10.00,TRUE,FALSE
+0192,Maglione,"lunghezza 51 cm, molto elastico, più articoli disponibili",Cappotti e Maglioni,10.00,TRUE,FALSE
 0193,Cappotto,Lunghezza 52 cm,Cappotti e Maglioni,10.00,TRUE,FALSE
-0194,Maglione ,"Lunghezza 32 cm, larghezza 18,5 cm, 2 pezzi disponibili",Cappotti e Maglioni,10.00,TRUE,FALSE
-0195,Maglione ,"Lunghezza 25 cm, larghezza 16 cm, 2 pezzi disponibili",Cappotti e Maglioni,10.00,TRUE,FALSE
-0197,Maglione ,"Lunghezza 20 cm, larghezza 14 cm",Cappotti e Maglioni,10.00,TRUE,FALSE
+0194,Maglione,"Lunghezza 32 cm, larghezza 18,5 cm, 2 pezzi disponibili",Cappotti e Maglioni,10.00,TRUE,FALSE
+0195,Maglione,"Lunghezza 25 cm, larghezza 16 cm, 2 pezzi disponibili",Cappotti e Maglioni,10.00,TRUE,FALSE
+0197,Maglione,"Lunghezza 20 cm, larghezza 14 cm",Cappotti e Maglioni,10.00,TRUE,FALSE
 0198,Cappotto,"Lunghezza 42 cm, larghezza 24 cm",Cappotti e Maglioni,10.00,TRUE,FALSE
 0212,Cappotto,"Lunghezza 33 cm, Larghezza 17 cm",Cappotti e Maglioni,10.00,TRUE,FALSE
 0215,Cappotto,Lunghezza 65 cm,Cappotti e Maglioni,10.00,TRUE,FALSE
 0216,Cappotto,Lunghezza 75 cm,Cappotti e Maglioni,10.00,TRUE,FALSE
 0217,Cappotto,Lunghezza 55 cm,Cappotti e Maglioni,10.00,TRUE,FALSE
-0218,Cappotto ,Lunghezza 45 cm,Cappotti e Maglioni,10.00 ,TRUE,FALSE
+0218,Cappotto,Lunghezza 45 cm,Cappotti e Maglioni,10.00,TRUE,FALSE
 0230,Cappotto impermeabile,lunghezza 40 cm,Cappotti e Maglioni,15.00,TRUE,FALSE
 0317,Felpa,,Cappotti e Maglioni,15.00,TRUE,FALSE
 0319,Felpa,,Cappotti e Maglioni,15.00,TRUE,FALSE
 0320,Felpa,,Cappotti e Maglioni,15.00,TRUE,FALSE
 0321,Cappotto,,Cappotti e Maglioni,15.00,TRUE,FALSE
-0322,Giacca ,,Cappotti e Maglioni,15.00,TRUE,FALSE
+0322,Giacca,,Cappotti e Maglioni,15.00,TRUE,FALSE
 0323,Impermeabile,,Cappotti e Maglioni,15.00,TRUE,FALSE
 0324,Cappotto,Taglia 40,Cappotti e Maglioni,15.00,TRUE,FALSE
 0331,Impermeabile,,Cappotti e Maglioni,10.00,TRUE,FALSE
@@ -69,20 +69,20 @@ id,nome,descrizione,categoria,prezzo,disponibile,primoPiano,Column 1
 0335,Impermeabile con cappotto,,Cappotti e Maglioni,10.00,TRUE,FALSE
 0336,Cappotto,,Cappotti e Maglioni,10.00,TRUE,FALSE
 0342,Cappotto,,Cappotti e Maglioni,10.00,TRUE,FALSE
-0343,Maglione ,,Cappotti e Maglioni,10.00,TRUE,FALSE
-0345,Maglione ,,Cappotti e Maglioni,10.00,TRUE,FALSE
-0346,Felpa,35 cm ,Cappotti e Maglioni,10.00,TRUE,FALSE
+0343,Maglione,,Cappotti e Maglioni,10.00,TRUE,FALSE
+0345,Maglione,,Cappotti e Maglioni,10.00,TRUE,FALSE
+0346,Felpa,35 cm,Cappotti e Maglioni,10.00,TRUE,FALSE
 0350,Impermeabile,,Cappotti e Maglioni,10.00,TRUE,FALSE
-0351,Giacca ,,Cappotti e Maglioni,10.00,TRUE,FALSE
+0351,Giacca,,Cappotti e Maglioni,10.00,TRUE,FALSE
 0352,Cappotto,,Cappotti e Maglioni,10.00,TRUE,FALSE
 0354,Cappotto,Taglia 40 cm,Cappotti e Maglioni,10.00,TRUE,FALSE
 0359,Impermeabile,Lunghezza 85 cm,Cappotti e Maglioni,10.00,TRUE,FALSE
 0360,Cappotto,,Cappotti e Maglioni,10.00,TRUE,FALSE
 0361,Felpa,,Cappotti e Maglioni,10.00,TRUE,FALSE
-0366,Maglione ,,Cappotti e Maglioni,10.00,TRUE,FALSE
+0366,Maglione,,Cappotti e Maglioni,10.00,TRUE,FALSE
 0001,Ciotola anti-ingozzamento,Ciotola in plastica,Ciotole,10.00,TRUE,FALSE
 0003,Ciotola automatica,Ciotola con timer integrato,Ciotole,25.00,TRUE,FALSE
-0004,Ciotole cibo e acqua,Ciotole grandi coordinate in plastica ,Ciotole,10.00,TRUE,FALSE
+0004,Ciotole cibo e acqua,Ciotole grandi coordinate in plastica,Ciotole,10.00,TRUE,FALSE
 0005,Ciotola anti-ingozzamento,Ciotola in plastica,Ciotole,10.00,TRUE,FALSE
 0006,Ciotola automatica,Ciotola con timer integrato,Ciotole,20.00,TRUE,FALSE
 0007,Ciotola anti-ingozzamento,Ciotola in plastica,Ciotole,10.00,TRUE,FALSE
@@ -96,7 +96,7 @@ id,nome,descrizione,categoria,prezzo,disponibile,primoPiano,Column 1
 0094,Ciotola portatile,"Ciotole doppie in silicone, pieghevoli",Ciotole,10.00,TRUE,FALSE
 0113,Misurino elettronico,,Ciotole,10.00,TRUE,FALSE
 0139,Ciotola con distributore,,Ciotole,10.00,TRUE,FALSE
-0140,Ciotola doppia ,In plastica,Ciotole,10.00,TRUE,FALSE
+0140,Ciotola doppia,In plastica,Ciotole,10.00,TRUE,FALSE
 0143,Ciotola doppia anti-ingozzamento,,Ciotole,10.00,TRUE,FALSE
 0144,Ciotole piccole in metallo,,Ciotole,5.00,TRUE,FALSE
 0146,Ciotola anti-ingozzamento,,Ciotole,5.00,TRUE,FALSE
@@ -105,7 +105,7 @@ id,nome,descrizione,categoria,prezzo,disponibile,primoPiano,Column 1
 0151,Ciotola doppia in ceramica,,Ciotole,10.00,TRUE,FALSE
 0153,Supporto per ciotole grandi,,Ciotole,10.00,TRUE,FALSE
 0156,Tappetino per appoggiare le ciotole,,Ciotole,5.00,TRUE,FALSE
-0177,Borraccia da viaggio,500 ml,Ciotole,5.00 ,TRUE,FALSE
+0177,Borraccia da viaggio,500 ml,Ciotole,5.00,TRUE,FALSE
 0268,Doppia ciotola media con sostegno,,Ciotole,10.00,TRUE,FALSE
 0269,Ciotola con ossi media,leggermente graffiata,Ciotole,7.00,TRUE,FALSE
 0270,Ciotola metallica media,,Ciotole,7.00,TRUE,FALSE
@@ -123,17 +123,17 @@ id,nome,descrizione,categoria,prezzo,disponibile,primoPiano,Column 1
 0298,Ciotola piccola in ceramica,,Ciotole,7.00,TRUE,FALSE
 0299,Ciotole piccole in metallo decorate,,Ciotole,10.00,TRUE,FALSE
 0327,Ciotola pieghevole portatile,,Ciotole,5.00,TRUE,FALSE
-0363,Ciotola da viaggio ,,Ciotole,4.00,TRUE,FALSE
+0363,Ciotola da viaggio,,Ciotole,4.00,TRUE,FALSE
 0028,Cuccia Rigida con cuscino,56x42 cm,Cucce,20.00,TRUE,FALSE
 0029,Cuccia rigida con cuscino,,Cucce,20.00,TRUE,FALSE
-0030,Cuscino ,Taglia medio-piccola 66x49 cm,Cucce,10.00,TRUE,FALSE
+0030,Cuscino,Taglia medio-piccola 66x49 cm,Cucce,10.00,TRUE,FALSE
 0154,Set coperte piccole,,Cucce,10.00,TRUE,FALSE
 0155,Set coperte piccole,,Cucce,10.00,TRUE,FALSE
-0166,Cuccia rigida ,Misura piccola,Cucce,10.00,TRUE,FALSE
-0170 ,Coperta,100x70 cm,Cucce,5.00,TRUE,FALSE
+0166,Cuccia rigida,Misura piccola,Cucce,10.00,TRUE,FALSE
+0170,Coperta,100x70 cm,Cucce,5.00,TRUE,FALSE
 0171,Coperta,57x40 cm,Cucce,5.00,TRUE,FALSE
-0183,Brandina,46x64 cm ,Cucce,10.00,TRUE,FALSE
-0184,Brandina,80x50 cm ,Cucce,10.00,TRUE,FALSE
+0183,Brandina,46x64 cm,Cucce,10.00,TRUE,FALSE
+0184,Brandina,80x50 cm,Cucce,10.00,TRUE,FALSE
 0231,Cuccia piccola imbottita,,Cucce,15.00,TRUE,FALSE
 0234,Cuccia piccola imbottita,,Cucce,15.00,TRUE,FALSE
 0235,Cuccia piccola imbottita,,Cucce,15.00,TRUE,FALSE
@@ -155,7 +155,7 @@ id,nome,descrizione,categoria,prezzo,disponibile,primoPiano,Column 1
 0256,Cuscino medio,,Cucce,15.00,TRUE,FALSE
 0257,Cuccia imbottita media,,Cucce,25.00,TRUE,FALSE
 0258,Cuccia imbottita media,,Cucce,15.00,TRUE,FALSE
-0261,Fagiolo con cuscino medio ,,Cucce,15.00,TRUE,FALSE
+0261,Fagiolo con cuscino medio,,Cucce,15.00,TRUE,FALSE
 0277,Coperta,,Cucce,10.00,TRUE,FALSE
 0278,Cuscino piccolo,,Cucce,15.00,TRUE,FALSE
 0288,Cuscino medio-piccolo,,Cucce,15.00,TRUE,FALSE
@@ -183,14 +183,14 @@ id,nome,descrizione,categoria,prezzo,disponibile,primoPiano,Column 1
 0108,Pannolini usa e getta,"8 pezzi, 6-16 Kg, 28-50 cm",Dispositivi medici e igienici,5.00,TRUE,FALSE
 0130,Pettine in metallo,,Dispositivi medici e igienici,5.00,TRUE,FALSE
 0131,Pettine in metallo,,Dispositivi medici e igienici,5.00,TRUE,FALSE
-0132,Spazzola ,Setole in metallo e plastica,Dispositivi medici e igienici,10.00,TRUE,FALSE
+0132,Spazzola,Setole in metallo e plastica,Dispositivi medici e igienici,10.00,TRUE,FALSE
 0133,Spazzola,Setole in metallo e plastica,Dispositivi medici e igienici,10.00,TRUE,FALSE
 0134,Spazzola,Setole in metallo e plastica,Dispositivi medici e igienici,10.00,TRUE,FALSE
 0135,Pettine in plastica,,Dispositivi medici e igienici,5.00,TRUE,FALSE
 0136,Pettine in metallo,,Dispositivi medici e igienici,5.00,TRUE,FALSE
 0137,Pettine in metallo,,Dispositivi medici e igienici,5.00,TRUE,FALSE
-0174,Mutanda elastica ,Circonferenza 45 cm,Dispositivi medici e igienici,5.00,TRUE,FALSE
-0175,Mutanda elastica ,Circonferenza 36 cm,Dispositivi medici e igienici,5.00,TRUE,FALSE
+0174,Mutanda elastica,Circonferenza 45 cm,Dispositivi medici e igienici,5.00,TRUE,FALSE
+0175,Mutanda elastica,Circonferenza 36 cm,Dispositivi medici e igienici,5.00,TRUE,FALSE
 0213,Collare elisabettiano,Circonferenza 60 cm,Dispositivi medici e igienici,10.00,TRUE,FALSE
 0229,Taglia unghie,,Dispositivi medici e igienici,10.00,TRUE,FALSE
 0280,Slip in cotone,taglia piccola,Dispositivi medici e igienici,15.00,TRUE,FALSE
@@ -198,10 +198,10 @@ id,nome,descrizione,categoria,prezzo,disponibile,primoPiano,Column 1
 0310,Spazzola,setole in metallo o plastica,Dispositivi medici e igienici,10.00,TRUE,FALSE
 0312,Spazzola,setole morbide,Dispositivi medici e igienici,5.00,TRUE,FALSE
 0314,Scarpe protettive,Taglia XS,Dispositivi medici e igienici,15.00,TRUE,FALSE
-0330,Spazzola ,pelo corto,Dispositivi medici e igienici,5.00,TRUE,FALSE
+0330,Spazzola,pelo corto,Dispositivi medici e igienici,5.00,TRUE,FALSE
 0332,Spazzola,pelo corto,Dispositivi medici e igienici,5.00,TRUE,FALSE
 0349,Spazzola,pelo corto,Dispositivi medici e igienici,5.00,TRUE,FALSE
-0016,Gioco ""Catch"","Gioco in plastica, disponibili 3 pezzi in tre diverse colorazioni",Giochi,5.00,TRUE,FALSE
+0016,"Gioco ""Catch""","Gioco in plastica, disponibili 3 pezzi in tre diverse colorazioni",Giochi,5.00,TRUE,FALSE
 0019,Gioco lancia pallina,,Giochi,5.00,TRUE,FALSE
 0110,Ciambella,"Piccola, in plastica",Giochi,5.00,TRUE,FALSE
 0111,Gioco,"Piccolo, in plastica",Giochi,5.00,TRUE,FALSE
@@ -237,16 +237,16 @@ id,nome,descrizione,categoria,prezzo,disponibile,primoPiano,Column 1
 0164,Guinzaglio in tessuto,,"Pettorine, Guinzagli e Collari",5.00,TRUE,FALSE
 0172,Collare in pelle,,"Pettorine, Guinzagli e Collari",5.00,TRUE,FALSE
 0173,Collare,,"Pettorine, Guinzagli e Collari",5.00,TRUE,FALSE
-0176,Guinzaglio in tessuto,107 cm ,"Pettorine, Guinzagli e Collari",5.00,TRUE,FALSE
-0201,Collare,Lunghezza da 34 cm a 50 cm ,"Pettorine, Guinzagli e Collari",5.00,TRUE,FALSE
+0176,Guinzaglio in tessuto,107 cm,"Pettorine, Guinzagli e Collari",5.00,TRUE,FALSE
+0201,Collare,Lunghezza da 34 cm a 50 cm,"Pettorine, Guinzagli e Collari",5.00,TRUE,FALSE
 0202,Collare,Lunghezza da 31 cm a 50 cm,"Pettorine, Guinzagli e Collari",5.00,TRUE,FALSE
 0203,Guinzaglio in tessuto,Lunghezza 180 cm,"Pettorine, Guinzagli e Collari",5.00,TRUE,FALSE
 0204,Guinzaglio in tessuto,Lunghezza 140 cm,"Pettorine, Guinzagli e Collari",5.00,TRUE,FALSE
-0206,Guinzaglio in tessuto,Lunghezza 141 cm ,"Pettorine, Guinzagli e Collari",5.00,TRUE,FALSE
+0206,Guinzaglio in tessuto,Lunghezza 141 cm,"Pettorine, Guinzagli e Collari",5.00,TRUE,FALSE
 0207,Porta sacchetti,,"Pettorine, Guinzagli e Collari",2.50,TRUE,FALSE
 0208,Collare,Lunghezza da 30 cm a 50 cm,"Pettorine, Guinzagli e Collari",5.00,TRUE,FALSE
-0209,Pettorina ,"Taglia L, 2 pezzi disponibili","Pettorine, Guinzagli e Collari",10.00,TRUE,FALSE
-0211,Pettorina,Taglia L ,"Pettorine, Guinzagli e Collari",10.00,TRUE,FALSE
+0209,Pettorina,"Taglia L, 2 pezzi disponibili","Pettorine, Guinzagli e Collari",10.00,TRUE,FALSE
+0211,Pettorina,Taglia L,"Pettorine, Guinzagli e Collari",10.00,TRUE,FALSE
 0219,Pettorina ad H,Taglia M,"Pettorine, Guinzagli e Collari",10.00,TRUE,FALSE
 0220,Pettorina ad Y,Taglia L,"Pettorine, Guinzagli e Collari",10.00,TRUE,FALSE
 0221,Pettorina ad H,Taglia S,"Pettorine, Guinzagli e Collari",10.00,TRUE,FALSE
@@ -266,7 +266,7 @@ id,nome,descrizione,categoria,prezzo,disponibile,primoPiano,Column 1
 0309,Pettorna,,"Pettorine, Guinzagli e Collari",10.00,TRUE,FALSE
 0311,Pettorina con guinzaglio,Taglia piccola,"Pettorine, Guinzagli e Collari",10.00,TRUE,FALSE
 0313,Pettorina con guinzaglio,Taglia piccola,"Pettorine, Guinzagli e Collari",10.00,TRUE,FALSE
-0315,Pettorina ,,"Pettorine, Guinzagli e Collari",10.00,TRUE,FALSE
+0315,Pettorina,,"Pettorine, Guinzagli e Collari",10.00,TRUE,FALSE
 0318,Pettorina,,"Pettorine, Guinzagli e Collari",10.00,TRUE,FALSE
 0329,Guinzaglio in tessuto,,"Pettorine, Guinzagli e Collari",5.00,TRUE,FALSE
 0333,Cintura di sicurezza con pettorina,,"Pettorine, Guinzagli e Collari",15.00,TRUE,FALSE
@@ -275,7 +275,7 @@ id,nome,descrizione,categoria,prezzo,disponibile,primoPiano,Column 1
 0339,Pettorina,,"Pettorine, Guinzagli e Collari",10.00,TRUE,FALSE
 0340,Cintura di sicurezza,,"Pettorine, Guinzagli e Collari",10.00,TRUE,FALSE
 0344,Pettorina,Taglia M,"Pettorine, Guinzagli e Collari",10.00,TRUE,FALSE
-0347,Pettorina ,,"Pettorine, Guinzagli e Collari",10.00,TRUE,FALSE
+0347,Pettorina,,"Pettorine, Guinzagli e Collari",10.00,TRUE,FALSE
 0362,Pettorina,,"Pettorine, Guinzagli e Collari",10.00,TRUE,FALSE
 0365,Pettorina,,"Pettorine, Guinzagli e Collari",10.00,TRUE,FALSE
 0367,Collare con guinzaglio,,"Pettorine, Guinzagli e Collari",10.00,TRUE,FALSE
@@ -294,5 +294,6 @@ id,nome,descrizione,categoria,prezzo,disponibile,primoPiano,Column 1
 0263,Trasportino/borsa piccolo,,Trasporti e Sicurezza,15.00,TRUE,FALSE
 0264,Trasportino/borsa piccolo,,Trasporti e Sicurezza,15.00,TRUE,FALSE
 0267,Trasportino/borsa piccolo,,Trasporti e Sicurezza,15.00,TRUE,FALSE
-0368,Trasportino ,,Trasporti e Sicurezza,15.00,TRUE,FALSE
+0368,Trasportino,,Trasporti e Sicurezza,15.00,TRUE,FALSE
 0369,Trasportino Morbido,,Trasporti e Sicurezza,25.00,TRUE,FALSE
+0370,Collare Prova,Prova del form,Guinzagli e Collari,10,TRUE,FALSE
