@@ -78,7 +78,7 @@
                 Alessandra Calafà</li>
         </ul>
         <p>Per consentire la più completa cognizione delle problematiche legate alla Legge da parte Sua, Le segnaliamo che copia del testo del Codice sulla protezione dei dati inerente ai Suoi diritti in relazione al trattamento dei Suoi dati è reperibile sul sito dell'Ufficio del Garante: <a href="https://www.garanteprivacy.it/">www.garanteprivacy.it</a>
-        <br> Ogni variazione sarà resa nota mediante pubblicazione sul sito: <a href="https://www.ribau.it/">www.ribau.it</a> </p>
+        <br> Ogni variazione sarà resa nota mediante pubblicazione sul sito: <a href="https://ribau.canilevarese.it/">ribau.canilevarese.it</a> </p>
       </section>
 
       <div class="actions">

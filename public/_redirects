@@ -1,0 +1,6 @@
+# Netlify redirects: https://docs.netlify.com/manage/routing/redirects/overview/
+
+# The site moved to ribau.canilevarese.it. ribau.it expires on 22/11/2026 and won't be renewed;
+# until then old links and search engines get a permanent redirect to the same page.
+https://ribau.it/*      https://ribau.canilevarese.it/:splat  301!
+https://www.ribau.it/*  https://ribau.canilevarese.it/:splat  301!

@@ -4,6 +4,8 @@
 
 Website to display products from RiBau, the thrift shop of Varese's Dog Shelter.
 
+Live at [ribau.canilevarese.it](https://ribau.canilevarese.it). The old domain ribau.it redirects there (see `public/_redirects`) until it expires on 22/11/2026.
+
 ## Adding products
 
 Volunteers add products with the Google Form "Nuovo prodotto RiBau". Every night a GitHub workflow copies the new answers into the Google Sheet with the next free ID, downloads their photos, publishes the website if anything changed, and reports problems by email. Setup and details: [docs/form_setup.md](docs/form_setup.md).
